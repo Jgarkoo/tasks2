@@ -1,0 +1,36 @@
+<div [formGroup]="Formc" class="con">
+    <div class="container">   
+        <div>
+            <label for="eMail">E-mail: </label>
+            <input type="email" formControlName="email" id="eMail">
+        </div>
+        
+        <div>
+            <label for="passw">Password: </label>
+            <input type="password" formControlName="password" id="passw">
+        </div>
+        
+        <div>
+            <label for="cpassw">Confirm Password: </label>
+            <input type="password" formControlName="cPassword" id="cpassw">
+        </div>
+
+        <div>
+            <label for="nickname">Nickname: </label>
+            <input type="text" formControlName="nickName" id="nickname">
+        </div>
+        
+        <div>
+            <label for="phnumber">Phone Number: </label>
+            <input type="tel" formControlName="phoneNumber" id="phnumber">
+        </div>
+        <div style="display: flex; align-items:center; padding-right: 100px;">
+            <input type="checkbox" id="checkbox" style="cursor: pointer;">
+            <h5>
+                I have read the <a href="">agreement</a>
+            </h5>
+        </div>
+        <button id="btn" [disabled]="Formc.invalid" (click)="register()">Register</button>   
+    </div>
+</div>
+

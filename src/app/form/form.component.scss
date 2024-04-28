@@ -1,0 +1,38 @@
+.con{
+    display: block;
+    padding: 20px;
+    margin-top: 50px;
+    width: 30%;
+    height: 300px;
+    background-color: chocolate;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: groove;
+    padding-right: 100px;
+    height: 25px;
+}
+
+#btn{
+    padding: 10px 15px 10px 15px;
+    margin-right: 180px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(109, 109, 249);
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: rgb(109, 109, 249);
+        transition: 0.3s;
+    }
+}
