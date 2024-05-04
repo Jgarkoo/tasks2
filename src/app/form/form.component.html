@@ -30,7 +30,50 @@
                 I have read the <a href="">agreement</a>
             </h5>
         </div>
-        <button id="btn" [disabled]="Formc.invalid" (click)="register()">Register</button>   
+        <button id="btn" type="submit" [disabled]="Formc.invalid" (click)="register()">Register</button>   
     </div>
+    <thead>
+        <tr>
+            <th>
+                email
+            </th>
+            <th>
+                password
+            </th>
+            <th>
+                cpassword
+            </th>
+            <th>
+                nickname
+            </th>
+            <th>
+                phone number
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of formcArray">
+            <td>
+                {{user.email}}
+            </td>
+            <td>
+                {{user.password}}
+            </td>
+            <td>
+                {{user.cpassword}}
+            </td>
+            <td>
+                {{user.nickName}}
+            </td>
+            <td>
+                {{user.phoneNumber}}
+            </td>
+            <td>
+                <button (click)="editUser(user.id)">
+                    edit
+                </button>
+            </td>
+        </tr>
+    </tbody>
 </div>
 

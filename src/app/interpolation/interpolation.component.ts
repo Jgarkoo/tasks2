@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./interpolation.component.scss']
 })
 export class InterpolationComponent {
-  title: string = 'Luka';
+  title  = {
+    name: 'luka'
+  }
 }
